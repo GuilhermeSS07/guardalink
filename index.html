@@ -21,11 +21,31 @@
     <a href="#solucoes">Soluções existentes</a>
     <a href="#nossa">Nossa solução</a>
     <a href="#equipe">Equipe</a>
-    <a href="#cronograma">Cronograma</a>
-    <a href="#documentacao">Documentação</a> <!-- NOVO -->
+     <!-- NOVO -->
   </nav>
+
+
+        <div class="header-actions">
+
+            <div class="user-section">
+                <a href="login.html" class="login-link" id="btnLogin">Login</a>
+
+                <a href="cadastro.html" class="register-link-header" id="btnCadastro">
+                    Cadastre-se
+                </a>
+
+                <a href="perfil.html" class="user-profile" id="userProfile" style="display: none;">
+                    <i class='bx bx-user-circle'></i>
+                    <span id="userNameHeader">Minha Conta</span>
+                </a>
+
+                <a href="#" class="logout-link" id="btnLogout" style="display: none;">Sair</a>
+            </div>
+
+
 </header>
 
+        
 <main class="conteudo">
 
   <!-- HERO -->
@@ -67,20 +87,124 @@
   </section>
 
   <!-- NOSSA SOLUÇÃO -->
-  <section id="nossa" class="bloco">
-    <h2>Nossa solução</h2>
-    <p>O Guardalink analisa links em tempo real e alerta com cores:</p>
+<!-- DEMONSTRAÇÃO DA EXTENSÃO -->
+<section id="demo-extensao" class="bloco">
+  <h2>Demonstração da Extensão</h2>
+  <p>Veja como o Guardalink protege usuários em tempo real:</p>
+
+  <div class="extensao-demo">
+
+    <div class="popup-extensao">
+
+      <div class="popup-topo">
+        <div class="logo-area">
+          <div class="escudo">
+          <img src="logo.png (2).png" alt="">
+
+          </div>
+          <div>
+            <h3>Guardalink</h3>
+            <span>Proteção ativa</span>
+          </div>
+        </div>
+
+        <div class="status-online"></div>
+      </div>
+
+      <div class="popup-conteudo">
+
+        <p class="site-label">Site atual</p>
+        <h4 id="siteNome">google.com</h4>
+
+        <div class="status-area seguro" id="statusArea">
+          <div class="icone-status" id="iconeStatus">✔</div>
+
+          <div>
+            <h2 id="statusTitulo">SITE SEGURO</h2>
+            <p id="statusTexto">
+              Nenhuma ameaça detectada.
+            </p>
+          </div>
+        </div>
+
+        <div class="barra-scan">
+          <div class="barra-progresso"></div>
+        </div>
+
+        <div class="botoes-extensao">
+          <button onclick="mudarStatus('seguro')">
+            Seguro
+          </button>
+
+          <button onclick="mudarStatus('suspeito')">
+            Suspeito
+          </button>
+
+          <button onclick="mudarStatus('perigoso')">
+            Perigoso
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANALISE DE URL -->
+<section class="bloco">
+  <h2>Análise em Tempo Real</h2>
+  <p>Teste como o Guardalink identifica ameaças digitais:</p>
+
+  <div class="analise-box">
+
+    <input
+      type="text"
+      id="inputAnalise"
+      placeholder="Digite uma URL..."
+    >
+
+    <button onclick="analisarURL()">
+      Analisar Site
+    </button>
+
+    <div class="resultado-analise" id="resultadoAnalise">
+      Aguardando análise...
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOQUEIO -->
+<section class="bloco">
+  <h2>Bloqueio Inteligente</h2>
+  <p>Quando uma ameaça é detectada, o Guardalink alerta imediatamente:</p>
+
+  <div class="tela-bloqueio">
+
+    <div class="icone-alerta">⚠</div>
+
+    <h3>SITE BLOQUEADO</h3>
+
+    <p>
+      O Guardalink identificou uma possível tentativa de phishing.
+    </p>
 
     <ul>
-      <li> Seguro</li>
-      <li> Suspeito</li>
-      <li> Perigoso</li>
+      <li>Roubo de senha</li>
+      <li>Domínio suspeito</li>
+      <li>Risco de vazamento de dados</li>
     </ul>
 
-    <div class="imagem-solucao">
-      <img src="solucao.png" alt="Exemplo dos alertas">
-    </div>
-  </section>
+    <button>
+      Voltar em segurança
+    </button>
+
+  </div>
+</section>
+
+
+
+
 
   <!-- EQUIPE -->
   <section id="equipe" class="bloco">
@@ -96,28 +220,28 @@
       </div>
 
       <div class="membro">
-        <img src="capturar.jpg" alt="foto pedro dias" class="foto-membro">
+        <img src="Capturar.JPG" alt="foto pedro dias" class="foto-membro">
         <h3>Pedro Dias</h3>
         <p>Slides</p>
         <p class="email">pedrooliveiradias27@gmail.com</p>
       </div>
 
       <div class="membro">
-        <img src="whatsapp image 2026-04-23 at 13.36.22.jpeg" alt="foto gabriel b." class="foto-membro">
+        <img src="WhatsApp Image 2026-04-23 at 13.36.22.jpeg" alt="foto gabriel b." class="foto-membro">
         <h3>Gabriel B.</h3>
         <p>Conteúdo</p>
         <p class="email">juiszao2@gmail.com</p>
       </div>
 
       <div class="membro">
-        <img src="whatsapp image 2026-04-23 at 13.14.51.jpeg" alt="foto rodrigo" class="foto-membro">
+        <img src="WhatsApp Image 2026-04-23 at 13.14.51.jpeg" alt="foto rodrigo" class="foto-membro">
         <h3>José Rodrigo</h3>
         <p>Conteúdo</p>
         <p class="email">joserodrigolucena2@gmail.com</p>
       </div>
 
       <div class="membro">
-        <img src="whatsapp image 2026-04-23 at 14.03.56.jpeg" alt="foto guilherme" class="foto-membro">
+        <img src="WhatsApp Image 2026-04-23 at 14.03.56.jpeg" alt="foto guilherme" class="foto-membro">
         <h3>Guilherme</h3>
         <p>Front-end</p>
         <p class="email">gui2007.s@gmail.com</p>
@@ -159,6 +283,9 @@
   <p>Projeto Integrador - Guardalink</p>
   <p>Equipe de Desenvolvimento 2026</p>
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

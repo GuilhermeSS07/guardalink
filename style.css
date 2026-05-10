@@ -87,6 +87,32 @@ body{
   animation: fadeUp 1s ease;
 }
 
+.btn-extensao{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 16px 28px;
+  border-radius: 16px;
+  background: linear-gradient(135deg,#00bfff,#2563eb);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,191,255,0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-extensao:hover{
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,191,255,0.55);
+}
+
+
+
+
+
 .titulo{
   font-size: 64px;
   font-weight: 600;
